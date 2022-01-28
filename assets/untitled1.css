@@ -6,23 +6,27 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-body {
-    height: 100vh; 
+
+.base{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    flex-direction:row;
+    border-radius:300px;
+    
+
 }
 section{
     position: relative;
-    width: 95%;
+    width: 100%;
     min-height: 100vh;
     padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
+    
    
 background: linear-gradient(294.28deg, #C8DCE6 0%, #B6CCDA 100%);
-border-radius: 15px 0px 0px 15px;
+border-radius: 30px;
 
 }
 
@@ -31,14 +35,17 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px ;
+    padding: 20px 100px  10px 60px;
     display: flex;
     
     align-items: center ;
 }
 header .logo{
 margin-top: 0px;
-width: 30px;
+width: 40.62px;
+Height:50px;
+left: 9.38%;
+
 }
 
 header ul{
@@ -52,8 +59,10 @@ header ul li a{
     display: inline block;
     color: #ffffff;
     font-weight: 500px;
-    margin-left: 40px;
+    margin-left: 50px;
     text-decoration: none;
+    line-height: 27px;
+    font-style: normal;
 }
 .content{
     color: #ffffff;
@@ -73,10 +82,14 @@ header ul li a{
     line-height: 4rem;
     font-weight: 200;
 }
-.content .text h2 samp{
+.content .text samp h3{
     color: #ffffff;
+    padding: 0  px 20px;
+
+    
    
 }
+
 .content .text a{
 display: inline-block;
 margin-top: 20px;
@@ -126,18 +139,20 @@ border-radius: 100px;
 
 .top{
     background-color: #ffffff;
-    width: 100px;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
-.menue{
+ .menue{
     padding:30px 30px 30px 30px ;
+    pointer-events:none
 }
 .icons{
 padding: 30px   ;
 margin-top: 500px;
 
-}
+} 
 .first{
     position: relative;
 
@@ -163,7 +178,9 @@ border-radius: 10px;
 
 }
 .serchcart{
-    margin-left:500px;
+    margin-left: auto;
+
+    position: relative;
 }
 .watch{
     background-color: rgb(255, 255, 255);
@@ -177,7 +194,7 @@ border-radius: 10px;
    
 }
 .facebook{
-    padding: 10px;
+    padding: 10px ;
 }
 .twitter{
     padding: 10px;
@@ -189,12 +206,29 @@ border-radius: 10px;
     width: 80%;
     margin-left: 10%;
     height: 30px;
-    background-color: black;
+    background-color:black;
     opacity: 0.2;
     filter: blur(5px);
     border-radius: 50%;
 }
- @media screen and (max-width:690px) {
+.w3-sidebar w3-bar-block w3-border-right{
+    display: none;
+}
+.sidenav{
+    display: none;
+}
+.colornavigator{
+    position: relative;
+    display: block;
+   
+}
+@media screen and (max-width:800px) {
+    .sidenav{
+        display: inline;
+        position: relative;
+}
+    
+
     header ul{
         display: none;
     }
@@ -202,64 +236,31 @@ header{
     justify-content: center;
 }
     .content {
-        font-size: 6px;
+        font-weight:700;
         flex-direction: column;
        
     }
     .imgbox .iWatch{
-        width: 200px;
+        width: 280px;
         display: flex;
-      
-        
-       
-        
-    
-    }
+ }
     .thumb{
-        position: absolute;
-        left: 3%;
-        display: flex;
-        width: 325px;
-        justify-content: space-between;
-        
+        display: none;
         
     
     }
-    .icons{
-        padding: 50px   ;
-        margin-top: 300px;
-        
-        }
-    .menue{
-    padding:50px  ;
-}
 .serchcart{
-    margin-left:150px;
+    
+    margin-left: 80%;
+    position: relative;
 }
-body {
-    height: 100%; 
-    display: flex;
-  
-    flex-direction: row;
-} 
-.colornavigator{
-    display:none;
-}
-.first{
-    width: 95px;
-}
-.second{
-    width: 95px;
-}
-.third{
-    width: 95px;
-}
+
 .thumb li img{
-    max-width: 60px;
+    max-width: 80px;
 
 }
 .content .text{
-    padding-left: 200px;
+    padding-left: 180px;
     padding-bottom: 150px;
 
 }
@@ -278,4 +279,103 @@ section{
 .box{
     margin-bottom: 25%;
 }
+.colornavigator{
+margin-top: 200px;
+margin-left: 55%; 
+justify-content: space-around;
+position: absolute;
+display:block 
+
+}
+
+.content .text samp h3{
+    color: #ffffff;
+    padding: 0  px 20px;
+    font-size: 1rem;
+}
+section{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+   
+background: linear-gradient(294.28deg, #C8DCE6 0%, #B6CCDA 100%);
+border-radius:20px;
+
+}
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: none;
+  
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a{
+    padding: 10px 8px 0px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    margin-top: 40%;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover{
+    color:black;
+
+  }
+  
+  .logon{
+    padding-left: 60px ;
+    margin-top: 40%;
+  }
+  .menue{
+    display: flex;
+    flex-direction:column-reverse;
+    
+}
+.base{
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 200px;
+}
+.top{
+    flex-direction: row;
+    z-index: 2;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding: 10px   ;
+    margin-top: 0%;
+    width: auto;
+}
+.menue{
+    padding:30px 30px 30px 30px ;
+    pointer-events:auto;
+    }
+    .facebook{
+        padding: 10px ;
+    }
+    .twitter{
+        padding: 12px;
+    }
+    .linkdin{
+        padding: 12px;
+    }
 }

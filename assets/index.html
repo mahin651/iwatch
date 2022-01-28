@@ -9,71 +9,97 @@ Apple watch landing page
 <link rel="stylesheet" href="untitled1.css">
 </head>
 <body>
-<div class="top">
-<div class="menue">
-<img src="Nav Menu.png"  >
-</div>
-<div class="icons">
-<div class="facebook">
-    <img src="Vector.png"  >
+<div class="base" >
+    <div class="top">
+    <div class="menue">
+    <img src="Nav Menu.png" onclick="toggle()"/>
     </div>
-    <div class="twitter">
-        <img src="Vector-2.png">
+    <div class="icons">
+    <div class="facebook">
+        <img src="Vector.png"  >
         </div>
-        <div class="linkdin">
-            <img src="Vector-3.png" >
+        <div class="twitter">
+            <img src="Vector-2.png">
             </div>
-</div>
-</div>
-<section class="sec">
+            <div class="linkdin">
+                <img src="Vector-3.png" >
+                </div>
+    </div>
+    </div>
+    <section class="sec">
     
-<header>
-    <a href="#"><img src="apple.png" class="logo"></a>
-    <ul>
-        <li><a href="#" >Mac</a></li>
-        <li><a href="#" >iPhone</a></li>
-        <li><a href="#" >iPad</a></li>
-        <div class="watch">
-        <li>iWatch</li>
-    </div>
-        <li><a href="#" >Support</a></li>
+        <header>
+            <a href="#"><img src="apple.png" class="logo"></a>
+            <ul>
+                <li><a href="#" >Mac</a></li>
+                <li><a href="#" >iPhone</a></li>
+                <li><a href="#" >iPad</a></li>
+                <div class="watch">
+                <li>iWatch</li>
+            </div>
+                <li><a href="#" >Support</a></li>
+                
+                
+            </ul>
+            <div class="serchcart">
+                <img src="Search and Cart.png">
+            </div>
+        </header>
         
         
-    </ul>
-    <div class="serchcart">
-        <img src="Search and Cart.png">
-    </div>
-</header>
-
-
-<div class="content">
-    <div class="text">
-    <h2><b>The perfect movement</b><br>Between Past And <br> Future<br></h2><samp><a><h7><b>Buy now</b></h7> </a></samp>
-   </div>
-<div class="imgbox">
-    <img src="1 1.png" class="iWatch">
-    <div class="box">
+        <div class="content">
+            <div class="text">
+            <h2><b>The perfect movement</b><br>Between Past And <br> Future<br></h2><samp><a><h3>Buy now</h3> </a></samp>
+           </div>
+        <div class="imgbox">
+            <img src="1 1.png" class="iWatch">
+            <div class="box">
         
-    </div>
+            </div>
+        </div>
+        </div>
+        <div class="thumb">
+            <div class="first">
+            <li><img src="4.png"></li>
+        </div>
+        <div class="second">
+            <li><img src="5.png"></li>
+        </div>
+        <div class="third">
+            <li><img src="3.png"></li>
+        </div>
+        </div>
+       
+        <div class= "colornavigator">
+            <img src="Color Indicator.png">
+        </div>
+        
+        </section>
+        
 </div>
-</div>
-<div class="thumb">
-    <div class="first">
-    <li><img src="4.png"></li>
-</div>
-<div class="second">
-    <li><img src="5.png"></li>
-</div>
-<div class="third">
-    <li><img src="3.png"></li>
-</div>
-</div>
-<ul class="sci">
 
-</ul>
-<div class= "colornavigator">
-    <img src="Color Indicator.png">
-</div>
-</section>
+
+<div class="sidenav" id="sidenav" >
+    <a href="#">Mac</a>
+    <a href="#">iPhone</a>
+    <a href="#">iPad</a>
+    <a href="#">iWatch</a>
+    <a href="#">Support</a>
+    
+  </div>
+  
+  <script>
+    
+function toggle() {
+  var x = document.getElementById("sidenav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+         
 </body>
+
 </html>
